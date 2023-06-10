@@ -382,3 +382,72 @@ function toggleDiv() {
 
 // }
 // ogrenciler.forEach(ogrenci);
+
+
+// const ulum=document.querySelector('.main');
+// let ogrencilerim=['oğuzhan','elif','mahmut','fatma'];
+// let html =``;
+// ogrencilerim.forEach(ogrenci=>{
+//   html+=`<li>${ogrenci}</li>`;
+//   console.log(html);
+
+
+// })
+
+// ulum.innerHTML=html;
+
+
+// let ogrenciler1 =
+// {
+//   ad: 'oğuzhan',
+//   sınıf: '4',
+//   yas: 23,
+//   dersler: ['matematik', 'algoritma', 'programlama']
+// };
+// console.log(ogrenciler1);
+// console.log(ogrenciler1.ad);
+// ogrenciler1['ad']='oguzkağan';
+// console.log(ogrenciler1['ad'])
+// console.log(typeof ogrenciler1);
+
+// let ogrenciler1 =
+// {
+//   ad: 'oğuzhan',
+//   sınıf: '4',
+//   yas: 23,
+//   dersler: [
+//     { isim: 'matematik',puan: 20 },
+//   { isim: 'fen',puan: 50 },
+//   { isim: 'türkçe',puan: 90 },],
+
+//   login() {
+//     console.log('oğrenci giriş yaptı');
+//   },
+
+//   logout() {
+//     console.log('oğrenci çıkış yaptı');
+//   },
+//   printLesseon() {
+//     console.log(this.dersler);
+//     this.dersler.forEach(ders => {
+//       console.log(ders.isim,ders.puan);
+//     })
+//   }
+
+
+// };
+// ogrenciler1.printLesseon();
+// ogrenciler1.login();
+// ogrenciler1.logout();
+
+// let sayi1=5.6;
+// console.log(Math);
+// console.log(Math.PI);
+// console.log(sayi1);
+// console.log(Math.round(sayi1)); //en yakın sayıya yuvarlar 
+// console.log(Math.floor(sayi1)); // en alta
+// console.log(Math.ceil(sayi1)); // en üstte
+// console.log(Math.trunc(sayi1)); // ondalık(decimal kısmı uçurur);
+
+// let rastgele=Math.random();
+// console.log(Math.round(rastgele*50s));
