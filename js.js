@@ -441,7 +441,7 @@ function toggleDiv() {
 // ogrenciler1.logout();
 
 // let sayi1=5.6;
-// console.log(Math);
+// console.log(Math);47
 // console.log(Math.PI);
 // console.log(sayi1);
 // console.log(Math.round(sayi1)); //en yakın sayıya yuvarlar 
@@ -451,3 +451,68 @@ function toggleDiv() {
 
 // let rastgele=Math.random();
 // console.log(Math.round(rastgele*50s));
+// const hata=document.querySelectorAll('p');
+// console.log(hata);
+// const  eror=document.querySelector('.error');
+// console.log(eror);
+// hata.forEach(hata=>{
+//   console.log(hata);
+// })
+
+// const buyuk=document.getElementById('buyuk');
+// console.log(buyuk);
+// const kucuk=document.getElementsByClassName('kucuk');
+// console.log(kucuk);
+
+// const  etiket=document.getElementsByTagName('p');
+// console.log(etiket);
+
+// const pdeğeri=document.querySelector('p');
+// console.log(pdeğeri.innerText);
+// pdeğeri.innerText='oğuzhan korkmaz değişriedi';
+
+// const pdeğeri=document.querySelectorAll('p');
+// pdeğeri.forEach( p=>{
+//   p.innerHTML+='        yeni alan';
+// })
+// const ogrenciler = ['meltem', 'gökçe', 'fatma'];
+// const icerik = document.querySelector('.error');
+// console.log(icerik);
+// icerik.innerHTML += '<h1>oğuzhan korkmaz</h1>';
+// ogrenciler.forEach(ogernci => {
+//   icerik.innerHTML += `<p>${ogernci}</p>`
+
+// })
+
+// const pdegeri =document.querySelector('p');
+// pdegeri.setAttribute('class','degismis');
+// pdegeri.setAttribute('style','color:blue');
+
+// const sitil = document.querySelector('p');
+// sitil.style.fontSize='40px';
+
+
+// const icerik=document.querySelector('p');
+// console.log(icerik.classList);
+// icerik.classList.add('deneme');
+// icerik.classList.remove('eroor');
+
+
+
+
+
+
+
+
+
+const deneme1 = document.querySelectorAll('p');
+deneme1.forEach(oguz => {
+  if (oguz.textContent.includes  ('çalışkan')) {
+    oguz.classList.add('deneme');
+    
+  }
+  else if (oguz.textContent.includes   ('tembel')) {
+    oguz.classList.add('tembel');
+    
+  }
+});
