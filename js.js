@@ -505,14 +505,31 @@ function toggleDiv() {
 
 
 
-const deneme1 = document.querySelectorAll('p');
-deneme1.forEach(oguz => {
-  if (oguz.textContent.includes  ('çalışkan')) {
-    oguz.classList.add('deneme');
-    
-  }
-  else if (oguz.textContent.includes   ('tembel')) {
-    oguz.classList.add('tembel');
-    
-  }
-});
+// const deneme1 = document.querySelectorAll('p');
+// deneme1.forEach(oguz => {
+//   if (oguz.textContent.includes  ('çalışkan'))  {
+//     oguz.classList.add('deneme');
+
+//   }
+//   else if (oguz.textContent.includes   ('tembel')) {
+//     oguz.classList.add('tembel');
+
+//   }
+// });
+
+
+
+const secion = document.querySelector('section');
+console.log(secion.children);
+console.log(Array.from(secion.children));
+
+Array.from(secion.children).forEach(ekleme => {
+
+  ekleme.classList.add('eklemeyapildi');
+})
+
+const section=document.querySelector('h2');
+console.log(section.parentElement);
+console.log(section.parentElement.parentElement);
+console.log(section.nextElementSibling);
+console.log(section.previousElementSibling.parentElement);
