@@ -519,17 +519,225 @@ function toggleDiv() {
 
 
 
-const secion = document.querySelector('section');
-console.log(secion.children);
-console.log(Array.from(secion.children));
+// const secion = document.querySelector('section');
+// console.log(secion.children);
+// console.log(Array.from(secion.children));
 
-Array.from(secion.children).forEach(ekleme => {
+// Array.from(secion.children).forEach(ekleme => {
 
-  ekleme.classList.add('eklemeyapildi');
-})
+//   ekleme.classList.add('eklemeyapildi');
+// })
 
-const section=document.querySelector('h2');
-console.log(section.parentElement);
-console.log(section.parentElement.parentElement);
-console.log(section.nextElementSibling);
-console.log(section.previousElementSibling.parentElement);
+// const section=document.querySelector('h2');
+// console.log(section.parentElement);
+// console.log(section.parentElement.parentElement);
+// console.log(section.nextElementSibling);
+// console.log(section.previousElementSibling.parentElement);
+
+
+
+
+
+// const ul = document.querySelector('ul');
+// ul.addEventListener('click', e => {
+//   if (e.target.tagName === 'LI') {
+//     e.target.remove();
+//   }
+// })
+
+
+// const buton = document.querySelector('button');
+
+// buton.addEventListener('click', () => {
+//   const ekleli = document.createElement('li');
+//   ekleli.textContent = 'javascript';
+//   ul.append(ekleli);
+
+// });
+
+// const kutu=document.querySelector('.kutu');
+// kutu.addEventListener('mousemove',e =>{
+//   kutu.textContent=`xkordinatı ${e.offsetX}, y kordınatı ${e.offsetY}`;
+// })
+
+
+
+
+// const points = [75, 70, 25, 35, 10, 27];
+// const studentpointer = points.filter(point => {
+//   return point > 50;
+
+// })
+// console.log(studentpointer);
+
+
+// const students = [
+//   { name: 'oğuzhan', passed: false },
+//   { name: 'kerem', passed: true },
+//   { name: 'buket', passed: false },
+//   { name: 'ali', passed: true },
+// ];
+
+// const passingstuden = students.filter(student=> {
+//   return !student.passed;
+// })
+// console.log(passingstuden);
+
+
+
+// const points = [75, 70, 25, 35, 10, 27];
+
+// const newPoints = points.map(point => {
+//   return point + 10;
+// })
+
+// console.log(newPoints);
+
+
+// const students = [
+//   { name: 'oğuzhan', point: 80 },
+//   { name: 'kerem', point: 70 },
+//   { name: 'buket', point: 40 },
+//   { name: 'ali', point: 45 },
+// ];
+
+
+// const newStudentsPoints = students.map(student => {
+
+//   if (student.point < 50) 
+//   {
+//     student.point+= 10;
+//     return student;
+//     // return {name:student.name , point:student.point +15}
+//   }
+//   else
+//   {
+//     return student
+//   }
+
+// })
+// console.log(newStudentsPoints);
+
+// 
+
+// const points = [70, 65, 25, 35, 10, 27,90];
+
+// const hightpoint = points.find(point=>{
+// return point >70;
+
+// })
+
+// console.log(hightpoint);
+
+
+// const points = [70, 65, 25, 35, 10, 27,90];
+// points.push(25);
+// console.log(points);
+// points.pop()
+// console.log(points);
+// points.pop()
+// console.log(points);
+
+// const points = [70, 65, 25, 35, 10, 27, 90];
+// const arrayIndex = points.findIndex(point => point == 35);
+// points[arrayIndex] = 50;
+// console.log(points);
+
+
+// const students = [
+//   { name: 'oğuzhan', point: 80 },
+//   { name: 'kerem', point: 70 },
+//   { name: 'buket', point: 40 },
+//   { name: 'ali', point: 45 },
+// ];
+
+// const objectIndex = students.findIndex(e => e.name == 'kerem');
+// students[objectIndex].point=50;
+// console.log(students);
+
+// const name = ['oğuzhan', 'mehmet', 'ali', 'burcu', 'zerda'];
+// name.sort();
+// name.reverse();
+// // console.log(name);
+
+
+// const points = [70, 65, 25, 3, 35, 10, 27, 90];
+// points.sort((a,b)=>a-b);
+
+// console.log(points);
+
+
+
+// const students = [
+//   { name: 'oğuzhan', point: 80 },
+//   { name: 'kerem', point: 70 },
+//   { name: 'buket', point: 40 },
+//   { name: 'ali', point: 45 },
+// ];
+
+// // students.sort((a,b)=>{
+// //   if(a.point>b.point)
+// //   {
+// //     return -1;
+// //   }
+// //   else if(a.point<b.point)
+// //   {
+// //     return +1;
+// //   }
+// //   else
+// //   {
+// //     return 0;
+// //   }
+// // })
+
+// students.sort((a,b)=>b.point - a.point);
+
+// console.log(students);
+
+
+
+// const students = [
+//   { name: 'oğuzhan', point: 80 },
+//   { name: 'kerem', point: 35 },
+//   { name: 'buket', point: 40 },
+//   { name: 'ali', point: 50 },
+//   { name: 'ali', point: 49 },
+//   { name: 'ali', point: 75 },
+// ];
+
+
+// const filter =students.filter(student=>student.point<50)
+// .map(student=>`${student.name} adlı öğrencini yeni notu ${student.point+15} dir`)
+
+// console.log(filter);
+
+
+
+
+// const now=new Date();
+// console.log(now);
+
+// console.log('yıl',now.getFullYear());
+// console.log('ay',now.getMonth()+1);
+// console.log('gün',now.getDay());
+// console.log('ayın kaçı',now.getDate());
+
+// console.log('saat',now.getHours());
+// console.log('dakika',now.getMinutes());
+// console.log('saniye',now.getSeconds());
+
+// console.log('timestamp',now.getTime());
+
+// console.log(now.toDateString());
+// console.log(now.toTimeString());
+// console.log(now.toLocaleDateString());
+// console.log(now.toLocaleString());
+
+
+const startDate = new Date('02/17/2000 14:45:00');
+const newDate = new Date();
+const dfff = newDate.getTime() - startDate.getTime();
+console.log(dfff);
+
+const  aradakiyil = Math.floor(dfff/1000/60/60/24/365);
+console.log(aradakiyil);
